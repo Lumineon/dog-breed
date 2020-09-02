@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
         <header>
 
         </header>
-        <div class="names__container">
-            <select>
-                <option>
+        <section class="main__content">
+            <div class="dog-options__container">
+                <div class="dog-names__container">
+                    <label for="dog-names__input">Nome do doguinho:</label>
+                    <input name="dog-names__input" class="dog-names__input" />
+                </div>
+                <div class="dog-breeds__container">
+                    <label>Raça do doguinho:</label>
+                    <select class="dog-breeds__select">
+                        <option>
+                            
+                        </option>
+                    </select>
+                </div>
+                <div class="fonts__container">
+                    <label>Fonte:</label>
+                    <select class="fonts__select">
+                        <option>
 
-                </option>
-            </select>
-        </div>
-        <div class="breeds__container">
-            <select>
-                <option>
-                    
-                </option>
-            </select>
-        </div>
-        <div class="fonts__container">
-            <select>
-                <option>
+                        </option>
+                    </select>
+                </div>
+                <div class="font-colors__container">
+                    <label>Cor da sua fonte:</label>
+                    <select class="font-colors__select">
+                        <option>
 
-                </option>
-            </select>
-        </div>
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="dog__image__container">
+                <img id="dog__image" src="" />
+            </div>
+            <div class="save__info__container">
+                <button class="save__info__button">Salvar os dados do doguinho!</button>
+            </div>
+        </section>
         <script type="text/javascript" src="../../dist/assets/js/common/index.js"></script>
     </body>
 </html>
