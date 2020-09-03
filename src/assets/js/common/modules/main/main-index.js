@@ -1,8 +1,10 @@
-import Data from './__data';
+import Data from './__build-data';
+import Dog from './__build-dog';
 
 const Methods = {
     init() {
         Data.init();
+        Dog.init();
     }
 }
 
