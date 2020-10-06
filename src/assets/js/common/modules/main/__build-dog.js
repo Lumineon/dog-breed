@@ -1,5 +1,3 @@
-// import getBreeds from './__build-data';
-
 const Methods = {
     init() {
         Methods.buildDog();

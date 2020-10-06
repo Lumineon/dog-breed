@@ -6,3 +6,4 @@ dist/
 fonts/
 TAREFAS.md
 .tmp
+.env

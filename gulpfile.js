@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 //Definição dos Modulos a serem utilizados no projeto
 const gulp = require('gulp');
+let uglify = require('gulp-uglify-es').default;
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const browserify = require('gulp-browserify');
 const babelify = require('babelify');

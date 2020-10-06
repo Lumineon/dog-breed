@@ -4,60 +4,67 @@
         <head>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <link href="../../dist/assets/css/common/main-style.css" rel="stylesheet" type="text/css" />
+            <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Dancing+Script&family=Indie+Flower&family=Sansita+Swashed&display=swap" rel="stylesheet">
         </head>
         <header>
             <div class="header__container">
                 <p>Faça seu doguinho</p>
             </div>
         </header>
-        <section class="information__content">
-            <div class="dog-options__container">
-                <div class="dog-names__container">
-                    <label for="dog-names__input">Nome do doguinho:</label>
-                    <input name="dog-names__input" class="dog-names__input" />
+        <div class="page__content">
+            <div class="information__content">
+                <div class="dog-options__container">
+                    <div class="dog-names__container">
+                        <label for="dog-names__input">Nome do doguinho:</label>
+                        <input name="dog-names__input" class="dog-names__input" />
+                    </div>
+                    <div class="fonts__container">
+                        <label>Fonte:</label>
+                        <select class="fonts__select">
+                            <option value="1">Courier Prime</option>
+                            <option value="2">Dancing Script</option>
+                            <option value="3">Indie Flower</option>
+                            <option value="4">Sansita Swashed</option>
+                        </select>
+                    </div>
+                    <div class="font-colors__container">
+                        <label>Cor da sua fonte:</label>
+                        <select class="font-colors__select">
+                            <option disabled>Selecione</option>
+                            <option value="pink">Rosa</option>
+                            <option value="red">Vermelho</option>
+                            <option value="yellow">Amarelo</option>
+                            <option value="green">Verde</option>
+                            <option value="blue">Azul</option>
+                            <option value="purple">Roxo</option>
+                            <option value="orange">Laranja</option>
+                            <option value="black">Preto</option>
+                        </select>
+                    </div>
+                    <div class="dog-breeds__container">
+                        <label>Raça do doguinho:</label>
+                        <select class="dog-breeds__select">
+                        </select>
+                    </div>
                 </div>
-                <div class="fonts__container">
-                    <label>Fonte:</label>
-                    <select class="fonts__select">
-                    </select>
+            </div>
+            <div class="buttons__content">
+                <div class="make__dog__container">
+                    <button class="make__dog__button js--build-dog">Gerar doguinho!</button>
                 </div>
-                <div class="font-colors__container">
-                    <label>Cor da sua fonte:</label>
-                    <select class="font-colors__select">
-                        <option disabled>Selecione</option>
-                        <option value="pink">Rosa</option>
-                        <option value="red">Vermelho</option>
-                        <option value="yellow">Amarelo</option>
-                        <option value="green">Verde</option>
-                        <option value="blue">Azul</option>
-                        <option value="purple">Roxo</option>
-                        <option value="orange">Laranja</option>
-                        <option value="black">Preto</option>
-                    </select>
-                </div>
-                <div class="dog-breeds__container">
-                    <label>Raça do doguinho:</label>
-                    <select class="dog-breeds__select">
-                    </select>
+                <div class="save__info__container">
+                    <button class="save__info__button">Salvar os dados do doguinho!</button>
                 </div>
             </div>
-        </section>
-        <section class="dog__content">
-            <div class="dog__name__container">
-                <p></p>
+            <div class="dog__content">
+                <div class="dog__name__container">
+                    <p></p>
+                </div>
+                <div class="dog__image__container">
+                    <img id="dog__image" src="" />
+                </div>
             </div>
-            <div class="dog__image__container">
-                <img id="dog__image" src="" />
-            </div>
-        </section>
-        <section class="buttons__content">
-            <div class="make__dog__container">
-                <button class="make__dog__button js--build-dog">Gerar doguinho!</button>
-            </div>
-            <div class="save__info__container">
-                <button class="save__info__button">Salvar os dados do doguinho!</button>
-            </div>
-        </section>
+        </div>
         <footer>
             <p>Created by Milena Franco</p>
         </footer>

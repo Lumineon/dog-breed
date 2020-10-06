@@ -1,7 +1,14 @@
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     &__container {
         width: 100%;
-        background: pink;
+        background: linear-gradient(90deg, pink, transparent);
         height: 70px;
         display: flex;
         justify-content: center;
@@ -9,18 +16,74 @@
 
         p {
             text-align: center;
+            font-size: 24px;
+            letter-spacing: 1px;
         }
     }
 }
 
-.information__content {
-    .dog {
-        &-names {
-            &__container {
-                label {
-                    font-size: 14px;
-                }
+.information {
+    &__content {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+}
+
+.buttons {
+    &__content {
+        margin-top: 15px;
+        padding: 0 20px;
+        display: flex;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #aaaa;
+
+        .make__dog__container {
+            margin-right: 25px;
+        }
+
+        button {
+            border: 1px solid transparent;
+            border-radius: 5px;
+            background: pink;
+            padding: 8px;
+            outline: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.dog {
+    &-options {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            height: 110px;
+            justify-content: space-evenly;
+        }
+    }
+    
+    &__content {
+        padding: 0 20px 40px 20px;
+        text-align: center;
+    }
+    &__name__container {
+        text-transform: capitalize;
+    }
+    &__image {
+        &__container {
+            width: 500px;
+            margin: 0 auto;
+            img {
+                border: 3px solid pink;
+                width: 100%;
+                height: auto;
             }
         }
     }
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
 }
